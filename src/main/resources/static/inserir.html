@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar </title>
+</head>
+<body>
+    <h1>Cadastrar Novo Produto</h1>
+    <form id="formCadastro" action="api/produtos/inserirForm" method="post">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="descricao">Nome do Produto:</label>
+        <textarea type="text" id="descricao" name="descricao" rows="4" required></textarea>
+
+        <label for="preco">Nome do Produto:</label>
+        <input type="text" id="preco" name="preco" step="0.01" required>
+
+        <label for="quantidade">Nome do Produto:</label>
+        <input type="text" id="quantidade" name="quantidade" required>
+
+        <input type="submit" value="Inserir Produto">
+
+        <br>
+
+        <p id="mensagem"></p>
+    </form>
+</body>
+</html>
